@@ -24,11 +24,11 @@ namespace AdventOfCode
             Console.WriteLine($"solution 2 is {Solution2}");
         }
 
-        static int Reduction(List<int> modelues)
+        static int Reduction(List<int> module)
         {
-            foreach (int i in modelues)
+            foreach (int i in module)
             {
-                foreach (int y in modelues)
+                foreach (int y in module)
                 {
                     if (i + y == 2020)
                     {
@@ -40,13 +40,13 @@ namespace AdventOfCode
             return 0;
         }
 
-        static int Function(List<int> modelues)
+        static int Function(List<int> module)
         {
-            foreach (int i in modelues)
+            foreach (int i in module)
             {
-                foreach (int y in modelues)
+                foreach (int y in module)
                 {
-                    foreach (int j in modelues)
+                    foreach (int j in module)
                     {
                         if (i + y + j == 2020)
                         {
