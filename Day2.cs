@@ -7,15 +7,14 @@ namespace AdventOfCode
 {
     public class Day2
     {
+        // thanks to Maximilus for helping me out
 
         static void Main(string[] args)
         {
             string[] input = File.ReadAllLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "input.txt"));
-
-            int partOneSolution = PartOne(input);
+            int Solution1 = PartOne(input);
             Console.WriteLine($"Part one:{partOneSolution}");
-
-            int partTwoSolution = PartTwo(input);
+            int Solution2 = PartTwo(input);
             Console.WriteLine($"Part two:{partTwoSolution}");
         }
 
