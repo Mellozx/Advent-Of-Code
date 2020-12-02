@@ -13,10 +13,10 @@ namespace AdventOfCode
             string[] input = File.ReadAllLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "day1input.txt"));
             List<int> TDF = (Array.ConvertAll(input, s => Int32.Parse(s))).ToList();
             TDF.Sort();
-            int Soluiton
+            int Solution
             = Reduction
             (TDF);
-            Console.WriteLine($"solution is {Soluiton}");
+            Console.WriteLine($"solution is {Solution}");
 
             int Solution2
             = Function
