@@ -11,7 +11,7 @@ namespace AdventOfCode
 
         static void Main(string[] args)
         {
-            string[] input = File.ReadAllLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "input.txt"));
+            string[] input = File.ReadAllLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "day2input.txt"));
             int Solution1 = PartOne(input);
             Console.WriteLine($"Part one:{partOneSolution}");
             int Solution2 = PartTwo(input);
