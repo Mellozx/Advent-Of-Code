@@ -7,6 +7,7 @@ namespace AdventOfCode
 {
     public class Day3
     {
+        // I want to die
         static void Main(string[] args)
         {
             string[] input= 
@@ -39,7 +40,6 @@ namespace AdventOfCode
                 trees.Add((ulong)Function(input, (int)slope.X, (int)slope.Y));
             }
 
-            //TIL aggregate function in LINQ
             return trees.Aggregate((ulong)1, (x, y) => x * y);
 
         }
