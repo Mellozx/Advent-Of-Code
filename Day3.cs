@@ -24,22 +24,22 @@ namespace AdventOfCode
 
         private static ulong DoPart2(string[] DoInput)
         {
-            List<ulong> trees = new List<ulong>();
-            List<Slope> slopes = new List<Slope>()
+            List<ulong> Tree = new List<ulong>();
+            List<FindSlope> Slope = new List<FindSlope>()
             {
-                new Slope(){ X=1, Y=1},
-                new Slope(){ X=3, Y=1},
-                new Slope(){ X=5, Y=1},
-                new Slope(){ X=7, Y=1},
-                new Slope(){ X=1, Y=2}
+                new FindSlope(){ X=1, Y=1},
+                new FindSlope(){ X=3, Y=1},
+                new FindSlope(){ X=5, Y=1},
+                new FindSlope(){ X=7, Y=1},
+                new FindSlope(){ X=1, Y=2}
             };
 
-            foreach (Slope slopefunc in slopes)
+            foreach (FindSlope slopefunc in Slope)
             {
-                trees.Add((ulong)Function(DoInput, (int)slopefunc.X, (int)slopefunc.Y));
+                Tree.Add((ulong)Function(DoInput, (int)slopefunc.X, (int)slopefunc.Y));
             }
 
-            return trees.Aggregate((ulong)1, (x, y) => x * y);
+            return Tree.Aggregate((ulong)1, (x, y) => x * y);
 
         }
 
@@ -70,7 +70,7 @@ namespace AdventOfCode
         }
     }
 
-    public class Slope
+    public class FindSlope
     {
         public ulong X { get; set; }
         public ulong Y { get; set; }
