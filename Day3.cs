@@ -10,20 +10,19 @@ namespace AdventOfCode
         // i want to die 
         static void Main(string[] args)
         {
-            string[] input= 
-            File.ReadAllLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "day3input.txt"));
-            ulong Solvent = (ulong)DoPart1(input);
+            string[] InputLoad = File.ReadAllLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "day3input.txt"));
+            ulong Solvent = (ulong)DoPart1(InputLoad);
             Console.WriteLine($"solution 1 is {Solvent} trees");
-            Solvent = DoPart2(input);
+            Solvent = DoPart2(InputLoad);
             Console.WriteLine($"solution 2 is {Solvent} trees");
         }
 
-        private static int DoPart1(string[] input)
+        private static int DoPart1(string[] DoInput)
         {
-            return Function(input, 3, 1);
+            return Function(DoInput, 3, 1);
         }
 
-        private static ulong DoPart2(string[] input)
+        private static ulong DoPart2(string[] DoInput)
         {
             List<ulong> trees = new List<ulong>();
             List<Slope> slopes = new List<Slope>()
@@ -37,7 +36,7 @@ namespace AdventOfCode
 
             foreach (Slope slopefunc in slopes)
             {
-                trees.Add((ulong)Function(input, (int)slopefunc.X, (int)slopefunc.Y));
+                trees.Add((ulong)Function(DoInput, (int)slopefunc.X, (int)slopefunc.Y));
             }
 
             return trees.Aggregate((ulong)1, (x, y) => x * y);
@@ -71,7 +70,7 @@ namespace AdventOfCode
         }
     }
 
-    class Slope
+    public class Slope
     {
         public ulong X { get; set; }
         public ulong Y { get; set; }
