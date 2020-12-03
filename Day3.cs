@@ -7,7 +7,7 @@ namespace AdventOfCode
 {
     public class Day3
     {
-        // I want to die
+        // i want to die 
         static void Main(string[] args)
         {
             string[] input= 
@@ -35,39 +35,39 @@ namespace AdventOfCode
                 new Slope(){ X=1, Y=2}
             };
 
-            foreach (Slope slope in slopes)
+            foreach (Slope slopefunc in slopes)
             {
-                trees.Add((ulong)Function(input, (int)slope.X, (int)slope.Y));
+                trees.Add((ulong)Function(input, (int)slopefunc.X, (int)slopefunc.Y));
             }
 
             return trees.Aggregate((ulong)1, (x, y) => x * y);
 
         }
 
-        static int Function(string[] input, int xGrow, int yGrow)
+        static int Function(string[] input, int xScale, int yScale)
         {
-            ulong trees = 0;
+            ulong TreeCount = 0;
             int widthOfMap = input[0].Length;
             int heightOfMap = input.Length;
             int y = 0;
             int x = 0;
             while (y != heightOfMap - 1)
             {
-                y += yGrow;
-                x += xGrow;
+                y += yScale;
+                x += xScale;
                 if (x >= widthOfMap)
                 {
                     x = x - widthOfMap;
                 }
 
-                char mapField = input[y][x];
-                if (mapField.ToString() == "#")
+                char FieldOfMap = input[y][x];
+                if (FieldOfMap.ToString() == "#")
                 {
-                    trees++;
+                    TreeCount++;
                 }
             }
 
-            return (int)trees;
+            return (int)TreeCount;
         }
     }
 
