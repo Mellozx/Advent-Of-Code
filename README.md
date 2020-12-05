@@ -5,8 +5,8 @@ Stars count: 10 :star:
 
 Day | STARS |
 ------------ | ------------ | 
-1 |[Day 1]|| :star: :star: |
-2 |[Day 2]|| :star: :star: |
-3 |[Day 3]|| :star: :star: |
-4 |[Day 4]|| :star: :star: |
-1 |[Day 5]|| :star: :star: |
+1 |[:star: :star:]|| :star: :star: |
+2 |[:star: :star:]|| :star: :star: |
+3 |[:star: :star:]|| :star: :star: |
+4 |[:star: :star:]|| :star: :star: |
+1 |[:star: :star:] |
