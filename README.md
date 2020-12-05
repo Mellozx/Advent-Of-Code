@@ -9,4 +9,4 @@ Day | STARS |
 2 |[:star: :star:]|| :star: :star: |
 3 |[:star: :star:]|| :star: :star: |
 4 |[:star: :star:]|| :star: :star: |
-1 |[:star: :star:] |
+5 |[:star: :star:] |
