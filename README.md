@@ -3,7 +3,7 @@
 
 Stars count: 10 :star:
 
-Day | STARS |
+Day | Star Count |
 ------------ | ------------ | 
 1 |[:star: :star:]|| :star: :star: |
 2 |[:star: :star:]|| :star: :star: |
