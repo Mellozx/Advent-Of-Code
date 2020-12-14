@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace day_6
+namespace AdventOfCode
 {
-    class Program
+    public class Day6
     {
         static void Main(string[] args)
         {
